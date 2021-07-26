@@ -1,5 +1,7 @@
 Description of github repo
 
+Pre-requisites: Java 8 and maven  
+
 Clone the repository into local directory and open the command prompt/terminal in that directory
 
 execute the following commands  
