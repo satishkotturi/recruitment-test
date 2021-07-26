@@ -1,0 +1,14 @@
+<script>
+const showNumberOfCities = async () => {
+  const query = document.getElementById("firstCharacter").value;
+  const response = await fetch('http://localhost:8080/recruitment-test/numberOfCities?firstCharacter='+query);
+  const myJson = await response.json(); //extract JSON from the http response
+  document.getElementById("result").innerHTML=myJson;
+}
+</script>
+<form>
+    <header>Please enter first character to get cities</header>
+    <input type="text" name="firstCharacter" id="firstCharacter" />
+    <input type="button" value="Get number of cities" onclick="showNumberOfCities()"/>
+</form>
+<p id="result"></p>
